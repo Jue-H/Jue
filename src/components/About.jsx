@@ -39,10 +39,13 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-            I am a first-year master's student at Brown University, currently majoring in Computer Science with a focus on the Visual Computing track. I completed my honor degree of Bachelor's at Boston University from 2021 to 2024, where I studied Mathematics, Computer Science, and Physics.
+            I am a second-year master's student at Brown University, currently majoring in Computer Science with a focus on the Visual Computing track. I completed my honor degree of Bachelor's at Boston University from 2021 to 2024, where I studied Mathematics, Computer Science, and Physics.
+            </p>
+            <p style={{ fontWeight: "bold", color: "orange" }}>
+              I will continue my PhD study at Brown under the supervision of Professor Kimia.
             </p>
             <p>
-          I have a deep passion for computer vision and computer graphics, with particular interests in Visual Odometry, Image Processing, and 3D Reconstruction. My work spans both academic research and hands-on projects, including Differential Pose Estimation and multi-omics analysis in computational biology.
+          I have a deep passion for computer vision and computer graphics, with particular interests in Visual Odometry, Image Processing, and 3D Reconstruction. My work spans both academic research and hands-on projects, including Multiview Reconstruction, Visual Odometry, and 3D Reconstruction.
           </p>
           <p>
           Beyond my technical pursuits, I enjoy watching movies and drawing in my free time, finding inspiration in both visual storytelling and artistic expression. I am always eager to explore new intersections between vision, AI, and creative applications, and I look forward to contributing to innovative projects in this space.
@@ -66,7 +69,8 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                   <a href="mailto:amk06june@gmail.com">amk06june@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>21
+                  <span className="fw-600 me-2">Age:</span>
+                  {Math.floor((new Date() - new Date(2003, 5, 16)) / (365.25 * 24 * 60 * 60 * 1000))}
                 </li>
                 <li className="border-0">
                   <span className="fw-600 me-2">From:</span>Providence,

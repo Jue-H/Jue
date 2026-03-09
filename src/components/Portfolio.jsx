@@ -41,7 +41,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.GRAPHIC],
     },
     {
-      title: "Renderers (ONGOING)",
+      title: "Renderers",
       projectInfo:[        "Exploring advanced rendering techniques, including CUDA-supported path tracing for photorealistic lighting, ray tracing for light-object interactions, texture mapping for surface realism, and OpenGL real-time rendering for interactive, GPU-accelerated graphics. ",
       ],
       client: "Brown University",
@@ -50,7 +50,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "Since Sep, 2024",
       url: [{
         name: "Still packing up",
-        link: "https://github.com/amk09",
+        link: "https://github.com/Jue-H",
       }],
       thumbImage: {
         type: "image",
@@ -58,6 +58,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       },
       sliderImages: [
         "images/projects/reflections_complex.png",
+        "images/projects/arm.gif",
         "images/projects/chess.gif",
         "images/projects/cornell_box_milestone.png",
       ],
@@ -77,7 +78,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       date: "Dec 13, 2024",
       url:[{
         name: "github repo URL",
-        link: "https://github.com/amk09/Lip",
+        link: "https://github.com/Jue-H/Lip",
       },
       {
         name: "paper link",
@@ -317,7 +318,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             setimagesLoaded(imagesLoaded + 1);
                           }}
                           className="img-fluid d-block portfolio-image"
-                          src={project.thumbImage.source}
+                          src={process.env.PUBLIC_URL + "/" + project.thumbImage.source}
                           alt=""
                         />
                       )}
@@ -328,7 +329,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             setimagesLoaded(imagesLoaded + 1);
                           }}
                           className="img-fluid d-block portfolio-image"
-                          src={project.thumbImage.source}
+                          src={process.env.PUBLIC_URL + "/" + project.thumbImage.source}
                           alt=""
                         />
                       )}
@@ -341,7 +342,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                           playsInline
                           className="img-fluid d-block portfolio-image"
                         >
-                          <source src={project.thumbImage.source} type="video/mp4" />
+                          <source src={process.env.PUBLIC_URL + "/" + project.thumbImage.source} type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       )}

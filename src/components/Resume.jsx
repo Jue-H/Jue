@@ -24,7 +24,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "Sep 2024 - Now",
       title: "Research Assistant",
       place: "Brown University LEMS Lab",
-      desc: "Differential Pose Estimation on Visual Odometry",
+      desc: "Edge Based Visual Odometry",
     },
     {
       yearRange: "Oct 2022 - May 2024",
